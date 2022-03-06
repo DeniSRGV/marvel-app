@@ -20,21 +20,20 @@ const App =()=> {
             <div className="app">
                 <AppHeader/>
                 <main>
-                    {/* <ErrorBoundary>
+                    <ErrorBoundary>
                     <RandomChar/>
                     </ErrorBoundary>
                     <div className="char__content">
                         
                         <ErrorBoundary>
-                        <CharList onCharSelected={onCharSelected}/>
-                        
+                        {/* <CharList onCharSelected={onCharSelected}/> */}
+                        <ComicsList/>
                         </ErrorBoundary>
                         <ErrorBoundary>
                         <CharInfo charId={selectedChar}/>
                         </ErrorBoundary>
                     </div>
-                    <img className="bg-decoration" src={decoration} alt="vision"/> */}
-                    <ComicsList/>
+                    <img className="bg-decoration" src={decoration} alt="vision"/>
                 </main>
             </div>
         )
